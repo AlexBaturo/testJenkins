@@ -48,3 +48,17 @@ lsb_release -a версия ОС
 systemd-cgtop top Для cgroups(модуль ядра)
 systemctl cat apport-forward@.service
 systemctl daemon-reload
+
+RAM
+vmstat 
+swap - раздел жесткого диска, который исп, если заканчивается RAM
+buff(heap) - место в памяти, зарезервированное под конкретные процессы
+cache - использованные недавно файлы 
+
+cat /proc/meminfo
+top
+shift+m - сортировка по памяти
+shift+f - выбрать по чему сортировать. s чтобы сохранить. q Для возврата
+
+жесткий диск
+iostat показатели чтения и записи на устройство
