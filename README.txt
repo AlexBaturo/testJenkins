@@ -96,3 +96,14 @@ RAID 5 - минимум 3 диска. https://adatahelp.ru/wp-content/uploads/20
 RAID 10 - минимум 4 диска. Диски должны быть в парах. объединяет RAID 0 и RAID 1
 + Быстрая скорость IO
 - Покупая 4 Тб, получаем 2. Тк два других - зеркало
+
+
+iptables -L  посмотреть все правила
+есть разделы INPUT FORWARD OUTPUT
+для докера сущ отдельный раздел DOCKER
+можно налету менять порт sudo iptables -A DOCKER -p tcp  --dport 100 -d 172.17.0.2 -j ACCEPT
+-A - добавить правило, -D удалить
+-p -порт и его тип
+-s source (если не использовать флаг, то anywhere)
+-d destination (если не использовать флаг, то anywhere)
+-j ACCEPT - разрешить, DROP - запретить
