@@ -107,3 +107,4 @@ iptables -L  посмотреть все правила
 -s source (если не использовать флаг, то anywhere)
 -d destination (если не использовать флаг, то anywhere)
 -j ACCEPT - разрешить, DROP - запретить
+чтобы сохранилось после  перезагрузки /etc/init.d/iptables save
