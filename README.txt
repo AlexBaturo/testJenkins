@@ -126,3 +126,11 @@ mtr то же , что и traceroute, но пакеты летят постоя�
 
 почистить кэш
 sync; echo 1 > /proc/sys/vm/drop_caches
+
+создать swap file
+dd if=/dev/zero of=/root/myswapfile bs=1M count=1024 #1 ГБ
+chmod 600 /root/myswapfile
+mkswap /root/myswapfile
+swapon /root/myswapfile
+# cat /etc/fstab
+/root/myswapfile               swap                    swap    defaults        0 0
