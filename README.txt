@@ -110,3 +110,10 @@ Netfilter
 -j ACCEPT - разрешить, DROP - запретить, REJECT- отклонить. Пользователи придет сообщение, что пакет отклонен
 чтобы сохранилось после  перезагрузки /etc/init.d/iptables save
 iptables -S - правила по умолчинию
+
+netstat -ie тоже самое что и ifconfig
+netstat -tuna
+t -tcp
+u - udp
+n - ip вместо hostname
+a - все установленные соединения
