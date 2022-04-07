@@ -137,3 +137,5 @@ mkswap /root/myswapfile
 swapon /root/myswapfile
 # cat /etc/fstab
 /root/myswapfile               swap                    swap    defaults        0 0
+
+lsof -p PID - открытые процессом файлы
