@@ -139,3 +139,4 @@ swapon /root/myswapfile
 /root/myswapfile               swap                    swap    defaults        0 0
 
 lsof -p PID - открытые процессом файлы
+locate logfileNAME - Найти лог файл
