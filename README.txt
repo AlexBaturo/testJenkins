@@ -144,3 +144,5 @@ swapon /root/myswapfile
 
 lsof -p PID - открытые процессом файлы
 locate logfileNAME - Найти лог файл
+
+dockerd - управление ресурсами контейнеров
