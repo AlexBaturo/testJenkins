@@ -153,3 +153,4 @@ dockerd - управление ресурсами контейнеров
 df -i проверить inodes
 
 echo $$ > /sys/fs/cgroup/cpuset/group0/tasks
+https://habr.com/ru/company/selectel/blog/303190/
