@@ -151,3 +151,5 @@ dockerd - управление ресурсами контейнеров
 мягкая - создает файл со своим inode. Ссылается на имя файла
 
 df -i проверить inodes
+
+echo $$ > /sys/fs/cgroup/cpuset/group0/tasks
