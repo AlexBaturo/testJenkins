@@ -156,3 +156,18 @@ echo $$ > /sys/fs/cgroup/cpuset/group0/tasks
 https://habr.com/ru/company/selectel/blog/303190/
 
 MBR(master boot record) - первые 512 байт диска. Участок в начале ЖД, зарезервированный для загрузчика ОС
+
+lsblk
+pvcreate /dev/sdb 
+vgextend sintezm-client /dev/sdb
+lvdisplay
+lvextend -l +100%FREE /dev/sintezm-client/root
+resize2fs /dev/sintezm-client/root
+df -h
+
+https://darksf.ru/2020/01/02/nastrojka-i-upravlenie-lvm-razdelami-v-linux/
+
+
+Для nexus
+lvextend -l +100%FREE /dev/nexus_repo/repo
+resize2fs /dev/nexus_repo/repo
