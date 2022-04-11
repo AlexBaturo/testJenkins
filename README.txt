@@ -154,3 +154,5 @@ df -i проверить inodes
 
 echo $$ > /sys/fs/cgroup/cpuset/group0/tasks
 https://habr.com/ru/company/selectel/blog/303190/
+
+MBR(master boot record) - первые 512 байт диска. Участок в начале ЖД, зарезервированный для загрузчика ОС
